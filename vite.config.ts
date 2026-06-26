@@ -8,10 +8,11 @@ export default defineConfig({
     alias: {
       // lets us write:  import '../../core/index'
       // inside the react app without leaving src/
-      '@core': resolve(__dirname, '../../src'),
+      '@core': resolve(__dirname, './web-component'),
     },
   },
   server: {
     port: 5174,
+    host: true, // Listen on all network interfaces (required for dev containers)
   },
 })

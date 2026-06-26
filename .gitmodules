@@ -1,0 +1,3 @@
+[submodule "web-component"]
+	path = web-component
+	url = https://github.com/shubham-personal-matrix/video-streaming-component.git
