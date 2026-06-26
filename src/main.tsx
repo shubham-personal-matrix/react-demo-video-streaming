@@ -7,9 +7,6 @@ import App from './App'
 import './theme.css'  // MUI theme + --app-* tokens
 import '@core/main'  // Register <video-stream-player> custom element
 
-// Register <video-stream-player> custom element
-import '@core/main'
-
 /**
  * MUI dark theme — single source of truth for all colours.
  *

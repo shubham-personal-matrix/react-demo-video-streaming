@@ -8,7 +8,7 @@ export default defineConfig({
     alias: {
       // lets us write:  import '../../core/index'
       // inside the react app without leaving src/
-      '@core': resolve(__dirname, './web-component'),
+      '@core': resolve(__dirname, './video-streaming-component'),
     },
   },
   server: {
