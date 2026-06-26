@@ -1,0 +1,40 @@
+/*
+ * App-level design tokens.
+ *
+ * These CSS custom properties are automatically inherited by
+ * <video-stream-player> shadow DOM — no prop drilling needed.
+ *
+ * To change the button colours across all players in this app,
+ * just update the values here.
+ */
+:root {
+  /* ── Button colours (picked up by <video-stream-player>) ─── */
+  --app-btn-primary:        #c5a722;   /* green  — Connect button  */
+  --app-btn-primary-hover:  #16a34a;
+  --app-btn-danger:         #f97316;   /* orange — Disconnect button */
+  --app-btn-danger-hover:   #ea580c;
+  --app-btn-text:           #ffffff;
+  --app-btn-radius:         6px;
+
+  /* ── Canvas / surface ───────────────────────────────────── */
+  --app-canvas-bg:    #0a0d12;
+  --app-surface:      #111827;
+  --app-border-color: #1f2937;
+  --app-text-color:   #f1f5f9;
+  --app-text-muted:   #6b7280;
+  --app-radius:       8px;
+  --app-font-family:  system-ui, sans-serif;
+
+  /* ── Page chrome ────────────────────────────────────────── */
+  --page-bg:   #030712;
+  --page-text: #f1f5f9;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--page-bg);
+  color: var(--page-text);
+  font-family: var(--app-font-family);
+  min-height: 100vh;
+}
